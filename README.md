@@ -1,6 +1,26 @@
 # NEXUS Smart Hospital Platform
 
-An enterprise-grade, full-stack hospital operational platform and clinical information system. The platform orchestrates core healthcare workflows with strict Role-Based Access Control (RBAC), clinical consultation management, diagnostic laboratory tracking, pharmacy inventory fulfillment, patient billing, and compliance audit logging.
+**Problem Statement:** Hospital Management / Healthcare Operations System — a unified platform to digitize and streamline core hospital workflows (patient intake, consultations, diagnostics, pharmacy, billing) across multiple roles with strict access control.
+
+## Description
+
+NEXUS is an enterprise-grade, full-stack hospital operational platform and clinical information system. The platform orchestrates core healthcare workflows with strict Role-Based Access Control (RBAC), clinical consultation management, diagnostic laboratory tracking, pharmacy inventory fulfillment, patient billing, and compliance audit logging. It connects the full patient journey — from token registration and doctor consultation, through lab diagnostics and prescription dispensation, to invoice generation and payment — into one coherent system, while giving each hospital role (doctor, patient, receptionist, lab, pharmacy, admin) only the access it needs.
+
+---
+
+## Team Members
+
+| Name | Role |
+| :--- | :--- |
+| Y V S Harshith | *(Full-Stack Developer / Team Lead)* |
+| P Tanusri | *(, Frontend Developer)* |
+| K Purandhareswari | *( Backend Developer)* |
+
+---
+
+## Live Deployment
+
+🔗 **Live Link:** *(add your deployed Vercel URL here, e.g., https://smart-hospital.vercel.app)*
 
 ---
 
@@ -34,7 +54,7 @@ The system is designed around a unified full-stack architecture with clear separ
 
 ---
 
-## Core Capabilities
+## Features Built
 
 ### 1. Multi-Role RBAC & Access Segregation
 Strictly enforces access boundaries across all clinical and administrative roles:
@@ -137,3 +157,15 @@ npm run dev
 | Laboratory | lab@hospital.com | lab123 | Lab Requests, Report Publishing |
 | Pharmacy | pharmacy@hospital.com | pharmacy123 | Prescription Queue, Stock Alerts |
 | Admin | admin@hospital.com | admin123 | Complete Platform & Audit Log Access |
+
+---
+
+## Known Bugs & Limitations
+
+* Telemedicine video calls are WebRTC-ready but not yet load-tested for group/multi-party calls — currently designed for 1:1 consultations only.
+* AI Diagnostic Assistant provides preliminary suggestions only; it is not a substitute for clinical judgment and has not been validated against a medical dataset.
+* No automated end-to-end test suite yet — testing has been manual across roles.
+* Payment settlement is integrated at the UI/workflow level; a production-grade payment gateway (e.g., Razorpay/Stripe) still needs to be wired in for real transactions.
+* Audit logs are append-only in the database but do not yet have a dedicated export/reporting UI for compliance officers.
+* *(Add/update this list honestly based on the current state of your submission.)*
+
