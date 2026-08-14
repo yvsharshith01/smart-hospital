@@ -167,5 +167,5 @@ npm run dev
 * No automated end-to-end test suite yet — testing has been manual across roles.
 * Payment settlement is integrated at the UI/workflow level; a production-grade payment gateway (e.g., Razorpay/Stripe) still needs to be wired in for real transactions.
 * Audit logs are append-only in the database but do not yet have a dedicated export/reporting UI for compliance officers.
-* *(Add/update this list honestly based on the current state of your submission.)*
+* 
 
