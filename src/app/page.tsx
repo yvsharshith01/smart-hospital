@@ -189,12 +189,14 @@ export default function SmartHospital() {
               />
             </div>
             <div>
-              <label className="block text-xs uppercase tracking-wider font-semibold text-slate-400 mb-1">
-                Password
+              <label htmlFor="password" className="block text-xs uppercase tracking-wider font-semibold text-slate-...">
               </label>
               <input
-                type="password"
-                value={password}
+  id="password"
+  name="password"
+  autoComplete="current-password"
+  type="password"
+  value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full bg-slate-950 border border-slate-800 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 rounded p-2.5 text-sm text-white outline-none transition"
                 required
